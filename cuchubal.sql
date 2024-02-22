@@ -13,6 +13,9 @@ CREATE TABLE IF NOT EXISTS users (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
+-- Usuario de prueba para la api
+INSERT INTO users (username, password, email, role) VALUES ('admin', 'admin', 'admin@mail.com', 'admin');
+
 CREATE TABLE IF NOT EXISTS user_profiles (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,

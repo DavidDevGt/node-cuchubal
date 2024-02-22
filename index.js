@@ -1,8 +1,14 @@
 const express = require('express');
 const app = express();
-const router = require('./router');
+const dotenv = require('dotenv');
 
-app.use(router);
+dotenv.config({
+    path: '.env'
+});
+console.log(process.env.USER, process.env.PASS, process.env.DATABASE, process.env.HOST);
+app.use(express.json());
+
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
