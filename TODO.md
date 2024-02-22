@@ -49,3 +49,14 @@
 7. **Internacionalización**: Preparar la aplicación para soportar diferentes idiomas y formatos regionales si se planea una expansión internacional.
 
 
+
+### .env
+
+```
+PORT=
+HOST=
+DATABASE=
+USER=
+PASS=
+JWT_SECRET=
+```
