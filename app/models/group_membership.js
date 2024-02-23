@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Contribution extends Model {
+  class GroupMembership extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -13,16 +13,14 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Contribution.init({
-    membership_id: DataTypes.INTEGER,
-    amount: DataTypes.DECIMAL,
-    contribution_date: DataTypes.DATE,
-    is_confirmed: DataTypes.INTEGER,
-    confirmation_date: DataTypes.DATE,
+  GroupMembership.init({
+    group_id: DataTypes.INTEGER,
+    user_id: DataTypes.INTEGER,
+    join_date: DataTypes.DATE,
     is_active: DataTypes.INTEGER
   }, {
     sequelize,
-    modelName: 'Contribution',
+    modelName: 'GroupMembership',
   });
-  return Contribution;
+  return GroupMembership;
 };
