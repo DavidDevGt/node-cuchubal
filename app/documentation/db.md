@@ -96,7 +96,6 @@ Gestiona los turnos de recepción del monto acumulado por los miembros del grupo
 | `turn_month` | INT | Mes del turno dentro del ciclo del grupo. |
 | `amount` | DECIMAL(10, 2) | Monto recibido en el turno. |
 | `is_half_hand` | INT | Indica si el monto recibido es la mitad (1) o el total (0).
-
 | `partner_user_id` | INT | Opcional. Clave foránea que apunta a `users.id`, identifica al socio en caso de "media mano". |
 | `has_received` | INT | Indica si el usuario ya ha recibido el monto de su turno (1) o no (0). |
 | `receive_date` | DATE | Fecha en la que el usuario recibe el monto. |
