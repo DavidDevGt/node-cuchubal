@@ -3,6 +3,7 @@
 ## Tablas
 
 ### `users`
+
 Almacena la información básica de los usuarios de la plataforma.
 
 | Campo | Tipo | Descripción |
@@ -17,6 +18,7 @@ Almacena la información básica de los usuarios de la plataforma.
 | `updated_at` | TIMESTAMP | Fecha de la última actualización del registro. |
 
 ### `user_profiles`
+
 Extiende la información de los usuarios con detalles adicionales.
 
 | Campo | Tipo | Descripción |
@@ -33,6 +35,7 @@ Extiende la información de los usuarios con detalles adicionales.
 | `updated_at` | TIMESTAMP | Fecha de la última actualización del registro. |
 
 ### `user_roles`
+
 Define los distintos roles que pueden tener los usuarios dentro de la plataforma.
 
 | Campo | Tipo | Descripción |
@@ -45,6 +48,7 @@ Define los distintos roles que pueden tener los usuarios dentro de la plataforma
 | `updated_at` | TIMESTAMP | Fecha de la última actualización del registro. |
 
 ### `savings_groups`
+
 Representa los grupos de ahorro o cuchubales creados por los usuarios.
 
 | Campo | Tipo | Descripción |
@@ -58,6 +62,7 @@ Representa los grupos de ahorro o cuchubales creados por los usuarios.
 | `updated_at` | TIMESTAMP | Fecha de la última actualización del registro. |
 
 ### `group_memberships`
+
 Asocia usuarios a grupos de ahorro, indicando su membresía.
 
 | Campo | Tipo | Descripción |
@@ -71,6 +76,7 @@ Asocia usuarios a grupos de ahorro, indicando su membresía.
 | `updated_at` | TIMESTAMP | Fecha de la última actualización del registro. |
 
 ### `group_settings`
+
 Configuraciones específicas de cada grupo de ahorro.
 
 | Campo | Tipo | Descripción |
@@ -86,6 +92,7 @@ Configuraciones específicas de cada grupo de ahorro.
 | `updated_at` | TIMESTAMP | Fecha de la última actualización del registro. |
 
 ### `group_turns`
+
 Gestiona los turnos de recepción del monto acumulado por los miembros del grupo.
 
 | Campo | Tipo | Descripción |
@@ -104,6 +111,7 @@ Gestiona los turnos de recepción del monto acumulado por los miembros del grupo
 | `updated_at` | TIMESTAMP | Fecha de la última actualización del registro. |
 
 ### `invitations`
+
 Gestiona las invitaciones enviadas a potenciales nuevos miembros para unirse a un grupo de ahorro.
 
 | Campo | Tipo | Descripción |
@@ -118,4 +126,3 @@ Gestiona las invitaciones enviadas a potenciales nuevos miembros para unirse a u
 | `is_active` | INT | Indica si la invitación está activa (1) o no (0). |
 | `created_at` | TIMESTAMP | Fecha de creación del registro. |
 | `updated_at` | TIMESTAMP | Fecha de la última actualización del registro. |
-
